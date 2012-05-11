@@ -1,92 +1,33 @@
 <html>
-    <head>
-        <!--[if !IE 7]>
-        <style type="text/css">
-            #wrap {display:table;height:100%}
-        </style>
-        <![endif]-->
-        <style type="text/css">
-            html, body {
-                background-color: #333333;
-                height: 100%;
-                margin: 0;
-            }
+<head>
+    <!--[if !IE 7]>
+    <style type="text/css">
+        #wrap {
+            display: table;
+            height: 100%
+        }
+    </style>
+    <![endif]-->
 
-            #wrap {
-                min-height: 100%;
-            }
-
-            #background1{
-                background-position: 120% 200px;
-            }
-
-            #background2{
-                background-position: -300px 40px;
-            }
-
-            .background{
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                background-image: url("back_ring.png");
-                background-repeat: no-repeat;
-            }
-
-            #command_box {
-                margin-left: auto;
-                margin-right: auto;
-                width: 600px;
-                height: 32px;
-
-
-                -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#829aa8',endColorstr='#405a6a')";
-                -moz-border-bottom-colors: none;
-                -moz-border-image: none;
-                -moz-border-left-colors: none;
-                -moz-border-right-colors: none;
-                -moz-border-top-colors: none;
-                background: -moz-linear-gradient(#829AA8, #405A6A) repeat scroll 0 0 transparent;
-                border-color: #677C89 #677C89 #6B808D;
-                border-radius: 5px 5px 0 0;
-                border-style: solid;
-                border-width: 1px;
-                color: #FFFFFF;
-                font-size: 16px;
-                font-weight: bold;
-                padding: 8px 18px;
-                position: relative;
-                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
-            }
-
-            #main {overflow:auto;
-                padding-bottom: 50px;}  /* must be same height as the footer */
-
-            #footer {position: relative;
-                margin-top: -50px; /* negative value of footer height */
-                height: 50px;
-                clear:both;} 
-            /*Opera Fix*/
-            body:before {
-                content:"";
-                height:100%;
-                float:left;
-                width:0;
-                margin-top:-32767px;/
-            }
-        </style>
-    </head>
-    <div>
-        <div id="background1" class="background"> </div>
-        <div id="background2" class="background"> </div>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div>
+    <div id="background1" class="background"></div>
+    <div id="background2" class="background"></div>
+</div>
+<div id="wrap">
+    <div id="main">
+        hello
     </div>
-    <div id="wrap">
-        <div id="main">
-            hello
+</div>
+<div id="footer">
+    <div id="command_box">
+        <div id="command_prefix">
+            grunt &#187;
         </div>
+        <input id="command_text" type="text">
     </div>
-    <div id="footer">
-        <div id="command_box">
-            oink
-        </div>
-    </div>
+</div>
+</body>
 </html>
