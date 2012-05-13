@@ -1,19 +1,19 @@
 html, body {
-    background-color: #333333;
     height: 100%;
     margin: 0;
 }
 
+html {
+    background: #333333 url("../img/back_ring.png") no-repeat -300px 40px;
+    font-family: monospace;
+}
+
+body {
+    background: transparent url("../img/back_ring.png") no-repeat 120% 200px;
+}
+
 #wrap {
     min-height: 100%;
-}
-
-#background1 {
-    background-position: 120% 200px;
-}
-
-#background2 {
-    background-position: -300px 40px;
 }
 
 .background {
@@ -32,11 +32,10 @@ html, body {
     position: relative;
 }
 
-#command_prefix{
+#command_prefix {
     color: gray;
     float: left;
     margin: 0 0 0 -60px;
-    font-family: monospace;
     line-height: 32px;
 }
 
@@ -71,5 +70,33 @@ body:before {
     padding: 0 10px;
     border-radius: 3px;
     border: 1px solid black;
-    font-family: monospace;
+    box-shadow: inset 1px 1px 3px 0 #000;
+}
+
+#main_column {
+    position: relative;
+    background: #5c5242;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    border-color: #29241d;
+    box-shadow: inset 0 0 3px;
+}
+
+.result_item {
+    border-color: #ccb693 black #a89579 black;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    background-color: #C2AE8B;
+    padding: 10px;
+}
+
+#item_wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
